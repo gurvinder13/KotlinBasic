@@ -9,6 +9,9 @@ import kotlinx.coroutines.flow.flowOf
 
 // Kotlin Flows basic example (Emit & Collect Function)
 suspend fun main() {
+    /**
+     * flowOf :- create a Flow from a fixed set of values
+     */
     val firstFlow = flowOf(1).collect {
         println("firstFlow ".plus(it.toString()))
     }
