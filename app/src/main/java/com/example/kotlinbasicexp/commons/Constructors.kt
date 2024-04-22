@@ -11,7 +11,7 @@ fun main() {
     print(student.id)
 }
 
-class Student(var name: String) {
+class Student(private var name: String) {
     var id: Int = -1
 
     init {
@@ -23,7 +23,7 @@ class Student(var name: String) {
      *     For example, you can't declare id as the property of the class in the secondary constructor:
      *
      */
-    constructor(name: String, id: Int) : this(name) {
+    constructor( name: String, id: Int) : this(name) {
         // the Body of the secondary constructor is called after the init block
         this.id = id
     }
